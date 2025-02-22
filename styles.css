@@ -1,0 +1,86 @@
+@font-face {
+    font-family: sophie;
+    src: url(Sophiecomic-Regular.ttf);
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6b3c27;
+  background-image: url("dogbones.png");
+  animation: animate-bg 10s infinite linear;
+  font-family: 'sophie';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+/*background animation*/
+@keyframes animate-bg {
+    100% {
+        background-position: 600px 600px;
+    }
+ 
+}
+.container {
+  background-color: #ffebd8;
+  border-radius: 29px;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 900px;
+  height: 900px;
+  outline: auto;
+  outline-color: #462d1f
+}
+
+h1 {
+  margin: 0px;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: #7e5137;
+}
+
+
+.instructions {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 10px auto;
+  max-width: 600px;
+  color: #462d1f;
+}
+
+
+
+input {
+
+color: #e0c695;
+border-radius: 10px;
+height: 30px;
+font-family: 'sophie';
+font-size: 30px;
+outline-color: #55362e;
+background-color: #55362e;
+}
+
+button {
+    background-color: #b46e3f;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 30px;
+    font-family: 'sophie';
+    font-size: 30px
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
