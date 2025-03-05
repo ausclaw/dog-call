@@ -9,12 +9,17 @@
 <div class="container">
   <h1>dog callin'</h1>
   <p class="instructions">type the dog's name to call it over!</p>
-  <p id="dog"></p> <!-- This will display our quote -->
-  <p id="name"></p> <!-- This will display any status messages -->
+  <p id="name"></p> <!-- This will display our quote -->
+  
   <div>
     <input type="text" aria-label="current word" id="typed-value" /> <!-- The textbox for typing -->
-    <button id="start">start</button> <!-- To start the game -->
+    <button type="button" id="start">start</button> <!-- To start the game -->
+    <p id="message" class="message"></p> <!-- This will display any status messages -->
+    <div id="dogpictures" class="dogpics"></div>
   </div>
+ 
+  <audio id="dog-sound" src="audio/dog_bark.mp3" preload="auto"></audio>
+  
   </div>
   <script src="script.js"></script>
 </body>
